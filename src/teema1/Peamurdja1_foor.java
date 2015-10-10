@@ -29,13 +29,15 @@ public class Peamurdja1_foor extends Application {
 
         while (count<5){
             foor.vahetaPunast();
-            foor.paus(2);
+            foor.paus(3);
             foor.vahetaKollast();
-            foor.paus(1);
-            foor.kustutaKollane();
-            foor.kustutaPunane();
+            foor.paus(1.5);
+            foor.vahetaKollast();
+            foor.vahetaPunast();
+            foor.vahetaRohelist();
+            foor.paus(3);
             int count2=0;
-            while (count2<6) {
+            while (count2<7) {
                 foor.vahetaRohelist();
                 foor.paus(0.5);
                 count2=count2+1;
@@ -43,7 +45,6 @@ public class Peamurdja1_foor extends Application {
             foor.vahetaKollast();
             foor.paus(1.5);
             foor.vahetaKollast();
-            foor.vahetaPunast();
             count=count+1;
         }
 

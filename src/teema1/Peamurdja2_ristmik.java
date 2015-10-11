@@ -17,65 +17,91 @@ public class Peamurdja2_ristmik extends Application {
         Foor foor3 = new Foor(Foor.VASAK, primaryStage);
         Foor foor4 = new Foor(Foor.PAREM, primaryStage);
 
-        ylemineAlumine(foor1);
-        ylemineAlumine(foor2);
-        vasakParem(foor3);
-        vasakParem(foor4);
+        tsykkel(foor1,0);
+        tsykkel(foor2,0);
+        tsykkel(foor3,1);
+        tsykkel(foor4,1);
+
     }
-    public void ylemineAlumine(Foor foor) {
+
+    public void tsykkel (Foor foor, int suund) {
+
+        int count=suund;
+
+
+        while (count<10) {
+
+            if (count != 0) {
+                foor.vahetaPunast();
+                foor.paus(6);
+                foor.vahetaKollast();
+                foor.paus(0.6);
+                foor.vahetaKollast();
+                foor.vahetaPunast();
+            }
+                    foor.vahetaRohelist();
+                    foor.paus(2);
+                    int count2 = 0;
+                    while (count2 < 7) {
+                        foor.vahetaRohelist();
+                        foor.paus(0.5);
+                        count2 = count2 + 1;
+                    }
+                    foor.vahetaKollast();
+                    foor.paus(1.5);
+                    foor.vahetaKollast();
+                    count = count + 1;
+
+            }
+        }
+
+    }
+
+/**
+
+        vertikaal(foor1, foor2);
+        horisontaal(foor3, foor4);
+
+    }
+    public void vertikaal (Foor foor1, Foor foor2) {
+        foor1.vahetaRohelist();
+        foor2.vahetaRohelist();
+        rohelisestpunaseks(foor1);
+        rohelisestpunaseks(foor2);
+    }
+
+
+    public void horisontaal (Foor foor3, Foor foor4) {
+        foor3.vahetaRohelist();
+        foor4.vahetaRohelist();
+        punasestroheliseks(foor3);
+        punasestroheliseks(foor4);
+    }
+
+        public void rohelisestpunaseks (Foor foor) {
         int count = 0;
         while (count < 5) {
             foor.vahetaPunast();
-            foor.paus(9.5);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
             foor.vahetaKollast();
             foor.paus(1);
             foor.vahetaKollast();
             foor.vahetaPunast();
-            foor.vahetaRohelist();
-            foor.paus(2);
-            int count2 = 0;
-            while (count2 < 7) {
-                foor.vahetaRohelist();
-                foor.paus(0.5);
-                count2 = count2 + 1;
-            }
-            foor.vahetaKollast();
-            foor.paus(1);
-            foor.vahetaKollast();
+            foor.vahetaPunast();
             count = count + 1;
         }
     }
-
-    public void vasakParem(Foor foor) {
-
+    public void punasestroheliseks(Foor foor){
+        foor.vahetaKollast();
+        foor.paus(0.5);
         foor.vahetaPunast();
-        foor.paus(1);
-
-        int count3 = 0;
-
-        while (count3 < 5) {
-
-            foor.vahetaKollast();
-            foor.paus(1);
-            foor.vahetaKollast();
-            foor.vahetaPunast();
-            foor.vahetaRohelist();
-            foor.paus(2);
-
-            int count4 = 0;
-            while (count4 < 7) {
-                foor.vahetaRohelist();
-                foor.paus(0.5);
-                count4 = count4 + 1;
-            }
-
-            foor.vahetaKollast();
-            foor.paus(1);
-            foor.vahetaKollast();
-            foor.vahetaPunast();
-            foor.paus(9.5);
-
-            count3 = count3 + 1;
-        }
-    }
-}
+*/

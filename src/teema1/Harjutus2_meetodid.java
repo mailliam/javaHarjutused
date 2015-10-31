@@ -39,11 +39,9 @@ public class Harjutus2_meetodid {
             } catch (InputMismatchException i) {
                 System.out.println("Sisesta korrektne arv!");
             }
-
             if (arv >= min && arv <= max) {
                 eiSobi=false;
                 System.out.println("Sobib!");
-
             } else {
                 eiSobi = true;
                 System.out.println("Arv peab olema vahemikus " +min + " kuni " + max+" ");

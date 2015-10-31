@@ -29,11 +29,7 @@ public class Peamurdja3_laevad {
 
     private static void generateTable() {
     laud=new int[9][9];
-
-    ArrayList a = new ArrayList();
-        a.add(new int[4]);
-
-        System.out.println(a.toString());
+        System.out.println(Arrays.toString(laud));
 
     }
 

@@ -1,5 +1,8 @@
 package teema1;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -16,4 +19,23 @@ import java.util.Scanner;
  *    nii vertikaalselt kui ka horisontaalselt?
  */
 public class Peamurdja3_laevad {
+
+    static int[][] laud;
+
+
+    public static void main(String[] args) {
+        generateTable();
+    }
+
+    private static void generateTable() {
+    laud=new int[9][9];
+
+    ArrayList a = new ArrayList();
+        a.add(new int[4]);
+
+        System.out.println(a.toString());
+
+    }
+
+
 }

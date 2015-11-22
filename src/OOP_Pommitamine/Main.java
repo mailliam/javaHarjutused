@@ -13,7 +13,7 @@ public class Main {
 
 /*
 * Main
-*     Oskab mängu käivitada
+*     Oskab mängu käivitad
 * Mäng
 *     Oskab mängu seadistada
 *     Oskab mängu töös hoida
